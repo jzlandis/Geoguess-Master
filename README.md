@@ -1,6 +1,33 @@
-# Geoguess Master
+[Site Link](https://wonderful-meitner-825c03.netlify.app/)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/2901d748-c994-4b95-9c94-6dbf9cc428be/deploy-status)](https://app.netlify.com/sites/wonderful-meitner-825c03/deploys)
-[Site](https://wonderful-meitner-825c03.netlify.app/)
+
+
+### To reinvert colors:
+Open web console and paste:
+
+```
+setInterval(function() {
+    if( document.getElementsByClassName('dismissButton').length ) {
+        for( dismissBtn of document.getElementsByClassName('dismissButton') ) {
+            dismissBtn.click()
+        }
+    }
+
+
+    divsB = document.querySelectorAll("div")
+    myDiv = [...divsB].filter(e => e.innerText == "For development purposes only");
+        for( dd of myDiv ) {
+            dd.style.zIndex = '-1'
+        }
+
+
+    for( inv of document.getElementsByClassName('widget-scene-canvas') ) {
+        inv.parentElement.parentElement.parentElement.style.mixBlendMode = 'difference'
+    }
+}, 1000)
+```
+
+# Geoguess Master
 
 ![logo](../master/public/img/icons/android-icon-192x192.png)
 
