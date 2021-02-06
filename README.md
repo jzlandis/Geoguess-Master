@@ -1,5 +1,6 @@
 # Geoguess Master
 [![Netlify Status](https://api.netlify.com/api/v1/badges/2901d748-c994-4b95-9c94-6dbf9cc428be/deploy-status)](https://app.netlify.com/sites/wonderful-meitner-825c03/deploys)
+[Site](https://wonderful-meitner-825c03.netlify.app/)
 
 ![logo](../master/public/img/icons/android-icon-192x192.png)
 
