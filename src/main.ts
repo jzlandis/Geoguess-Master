@@ -14,8 +14,8 @@ Vue.use(VueCompositionAPI)
 
 var firebaseConfig = {
   apiKey: process.env.VUE_APP_FIREBASE_API_KEY,
-  authDomain: process.env.VUE_APP_FIREBASE_PROJECT_ID + ".firebaseapp.com",
-  databaseURL: "https://" + process.env.VUE_APP_FIREBASE_PROJECT_ID + "-default-rtdb.firebaseio.com",
+  authDomain: process.env.FIREBASE_CONFIG_AUTHDOMAIN,
+  databaseURL: process.env.FIREBASE_CONFIG_DATABASEURL,
   projectId: process.env.VUE_APP_FIREBASE_PROJECT_ID,
   storageBucket: process.env.VUE_APP_FIREBASE_PROJECT_ID + ".appspot.com",
   messagingSenderId: process.env.VUE_APP_FIREBASE_MESSAGING_SENDER_ID,
